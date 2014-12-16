@@ -1,0 +1,62 @@
+.vjs-big-play-button/*,
+.vjs-fullscreen-control*/{
+	visibility: hidden;
+}
+
+.vjs-default-skin .vjs-rewind-button{
+	cursor: pointer;
+}
+.vjs-default-skin .vjs-rewind-button:before{
+	font-family: FontAwesome;
+	content: "\f0e2";
+
+}
+
+.vjs-default-skin .vjs-choices-control{
+	bottom: 1em;
+	left: 0;
+	right: 0;
+	position: absolute;
+	text-align: center;
+}
+
+.vjs-default-skin .vjs-choices-option{
+	color: white;
+	margin: 0 10px;
+	font-size: 15px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 4px;
+	padding: 10px 15px;
+	display: inline-block;
+	background-color: #e74c3c;
+	transition: border .25s linear, color .25s linear, background-color .25s linear;
+}
+
+.vjs-default-skin .vjs-light-button{
+	cursor: pointer;
+	float: right;
+}
+
+.vjs-default-skin .vjs-light-button:before{
+	font-family: FontAwesome;
+	content: "\f0eb";
+}
+
+.turn-off-light{
+	background-color: #202020;
+	transition: background-color 0.2s;
+}
+
+.vjs-register-floating {
+    position: absolute;
+    right: 10px;
+    bottom: 54px;
+}
+
+.vjs-register-center {
+    position: absolute;
+    left: 50%;
+    margin-left: -51px;
+    bottom: 95px;
+}

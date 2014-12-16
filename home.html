@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="col-lg-10 col-md-10">
+        <h3>视频播放<span>{{currentActivity.id}}</span></h3>
+        <div activity></div>
+    </div>
+    <div class="col-lg-2 col-md-2">
+        <h3>视频列表</h3>
+        <div class="text-center" style="cursor: pointer;width: 100px; line-height: 40px;height: 40px;
+        background-color: yellow;
+        margin-bottom: 10px" ng-repeat="video in videos" ng-cloak ng-click="playVideo($index)">{{video.title + ($index+1)}}</div>
+    </div>
+</div>
