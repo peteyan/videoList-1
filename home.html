@@ -7,6 +7,8 @@
         <h3>视频列表</h3>
         <div class="text-center" style="cursor: pointer;width: 100px; line-height: 40px;height: 40px;
         background-color: yellow;
-        margin-bottom: 10px" ng-repeat="video in videos" ng-cloak ng-click="playVideo($index)">{{video.title + ($index+1)}}</div>
+        margin-bottom: 10px" ng-repeat="activity in activities" ng-cloak ng-click="playVideo($index)">
+            {{($index+1) + '.' + activity.videos[0].name}}
+        </div>
     </div>
 </div>

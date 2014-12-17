@@ -10,8 +10,8 @@ angular.module('Test')
                 link: function($scope, $element, $attrs) {
                     //$scope.showVideoRating = false;
                     $scope.currentActivity = activityProvider.currentActivity;
-                    $scope.video = activityProvider.currentActivity.video;
-                    $scope.problemMaterial = activityProvider.currentActivity['problems'];
+                    $scope.video = activityProvider.currentActivity.videos[0];
+                    $scope.problemMaterial = $scope.video['problems'];
                     $scope.isMainVideo = true;
                     $scope.mainUrl = $sce.trustAsResourceUrl($scope.video.url);
                     var videoTag = $element.find('video').get(0);
@@ -133,7 +133,7 @@ angular.module('Test')
                             mainPlayer.controls(true);
                             makeChoices(material, choice);
                         }
-                    }
+                    };
 
                     _.each($scope.problemMaterial, function(material, index) {
                         popcorn.cue(material.show_time, function() {
@@ -147,7 +147,7 @@ angular.module('Test')
                             //options : {choice_id_one: {choice: choine_one, fn: fn}, choice_id_two: {choice: choice_two, fn: fn}}
                             var options = {};
                             _.each(material.choices, function(choice) {
-                                options[choice.id] = {
+                                options[choice._id] = {
                                     choice: choice,
                                     fn: getFn(material, choice)
                                 }
@@ -201,7 +201,13 @@ angular.module('Test')
                         } else {
                             $(subVideojsElement).width(720).height(540);
                         }
-                    })
+                    });
+
+                    mainPlayer.on('ended', function(){
+                        if(activityProvider.currentActivity.problems){
+                            $rootScope.$broadcast('videoEnd', 'problem');
+                        }
+                    });
 
                     subPlayer.on('ended', function() {
                         var pre_child_path = subPlayer.currentSrc();
@@ -303,18 +309,31 @@ angular.module('Test')
             ]
         }
     })
+    .directive('problem', function(){
+        return {
+            restrict: "E",
+            templateUrl: '_problemTemplate.html',
+            scope: {},
+            controller: function($scope, $element, $attrs, activityProvider){
+                $scope.obj = {};
+                $scope.problems = activityProvider.currentActivity['problems'];
+            }
+        }
+    })
     .directive('activity', function(){
         return {
             restrict: 'A',
             controller: function($scope, $element, $rootScope, $compile){
-                $scope.$on('parsea', function(a, type){
-                    if(type === 'video'){
-                        $rootScope.$broadcast('videojs_dispose');
-                        $element.html('<hypervideo></hypervideo>');
-                        $compile($element.children())($scope);
-                    }
+                $scope.$on('hypervideo', function(){
+                    $rootScope.$broadcast('videojs_dispose');
+                    $element.html('<hypervideo></hypervideo>');
+                    $compile($element.children())($scope);
                 });
-                $scope.$emit('ready');
+                $scope.$on('videoEnd', function(){
+                    $rootScope.$broadcast('videojs_dispose');
+                    $element.html('<problem></problem>');
+                    $compile($element.children())($scope);
+                });
             }
         }
     });

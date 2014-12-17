@@ -1,0 +1,550 @@
+[
+  {
+    "_id": "538fe2a576cb8a0068b14035",
+    "name": "三角形的概念",
+    "disabled": false,
+    "bloods": 3,
+    "videos": [
+      {
+        "_id": "53991e2814ae70d95adf65c5",
+        "name": "三角形的概念",
+        "problems": [
+          {
+            "_id": "53991e2b14ae70d95adf65c6",
+            "choices": [
+              {
+                "is_correct": false,
+                "body": "A",
+                "_id": "53991e4014ae70d95adf65ca"
+              },
+              {
+                "is_correct": false,
+                "body": "B",
+                "_id": "53991e4014ae70d95adf65c9"
+              },
+              {
+                "is_correct": false,
+                "body": "C",
+                "_id": "53991e4014ae70d95adf65c8"
+              },
+              {
+                "is_correct": false,
+                "body": "D",
+                "_id": "53991e4014ae70d95adf65c7"
+              }
+            ],
+            "show_time": 156
+          }
+        ],
+        "url": "http://yc-course-video.qiniudn.com/53991e2814ae70d95adf65c5",
+        "tags": [],
+        "topics": []
+      }
+    ],
+    "problems": [
+      {
+        "_id": "538fe48f76cb8a0068b1403b",
+        "body": "一位同学用三根木棒拼成如图所示的图形，其中符合三角形概念的是（  ）<div><probimg src='http://mothership.qiniudn.com/53cf27216ae199341873aedb'></probimg></div>",
+        "expl": "根据三角形的基本定义（同一平面内三条线段首尾顺次相接组成的闭合图形）进行判断。",
+        "type": "single",
+        "disabled": false,
+        "tags": [],
+        "topics": [],
+        "choices": [
+          {
+            "_id": "538feaea76cb8a0068b14046",
+            "body": "$1$",
+            "is_correct": false,
+            "isCorrect": false
+          },
+          {
+            "_id": "538feaea76cb8a0068b14045",
+            "body": "$3$",
+            "is_correct": false,
+            "isCorrect": false
+          },
+          {
+            "_id": "538feaea76cb8a0068b14044",
+            "body": "$4$",
+            "is_correct": false,
+            "isCorrect": false
+          },
+          {
+            "_id": "53915d0fe66322855fba5a9a",
+            "body": "$2$",
+            "is_correct": true,
+            "isCorrect": false
+          }
+        ],
+        "correct_answer": []
+      },
+      {
+        "_id": "538ff83076cb8a0068b14071",
+        "body": "三角形按角分类可以分为（  ）",
+        "expl": "<div><explimg src='http://mothership.qiniudn.com/53cf27216ae199341873aedc'></explimg></div>",
+        "type": "single",
+        "disabled": false,
+        "tags": [],
+        "topics": [],
+        "choices": [
+          {
+            "_id": "538ffa9276cb8a0068b14132",
+            "body": "直角三角形；锐角三角形；钝角三角形",
+            "is_correct": true,
+            "isCorrect": false
+          },
+          {
+            "_id": "538ffa9276cb8a0068b14131",
+            "body": "直角三角形；锐角三角形；等腰三角形",
+            "is_correct": false,
+            "isCorrect": false
+          },
+          {
+            "_id": "538ffa9276cb8a0068b14130",
+            "body": "钝角三角形；锐角三角形；等边三角形",
+            "is_correct": false,
+            "isCorrect": false
+          },
+          {
+            "_id": "538ffa9276cb8a0068b1412f",
+            "body": "等腰三角形；直角三角形；等边三角形",
+            "is_correct": false,
+            "isCorrect": false
+          }
+        ],
+        "correct_answer": []
+      },
+      {
+        "_id": "5398173e7c92662841b021f7",
+        "body": "三角形按边分类可以分为（    ）",
+        "expl": "<div><explimg src='http://mothership.qiniudn.com/53cf27216ae199341873aedd'></explimg></div>",
+        "type": "single",
+        "disabled": false,
+        "tags": [],
+        "topics": [],
+        "choices": [
+          {
+            "_id": "539818382777cc5242aea7b2",
+            "body": "等腰三角形；等边三角形；三边都不相等的三角形",
+            "is_correct": false,
+            "isCorrect": false
+          },
+          {
+            "_id": "539818382777cc5242aea7b1",
+            "body": "等腰三角形；三边都不相等的三角形",
+            "is_correct": true,
+            "isCorrect": false
+          },
+          {
+            "_id": "539818382777cc5242aea7b0",
+            "body": "等腰三角形；等边三角形；直角三角形",
+            "is_correct": false,
+            "isCorrect": false
+          },
+          {
+            "_id": "539818382777cc5242aea7af",
+            "body": "等边三角形；三边都不相等的三角形",
+            "is_correct": false,
+            "isCorrect": false
+          }
+        ],
+        "correct_answer": []
+      },
+      {
+        "_id": "538feaea76cb8a0068b14043",
+        "body": "下列哪条不是三角形$\\Delta ABC$的边？<div><probimg src='http://mothership.qiniudn.com/53cf27216ae199341873aede'></probimg></div>",
+        "expl": "线段的两个端点必须都是三角形的顶点，这条线段才能被称为三角形的一条边。<br>$D$点不是$\\Delta ABC$的顶点，<br>因此$CD$不是$\\Delta ABC$的边",
+        "type": "single",
+        "disabled": false,
+        "tags": [],
+        "topics": [],
+        "choices": [
+          {
+            "_id": "538febd576cb8a0068b1404f",
+            "body": "$AB$",
+            "is_correct": false,
+            "isCorrect": false
+          },
+          {
+            "_id": "538febd576cb8a0068b1404e",
+            "body": "$BC$",
+            "is_correct": false,
+            "isCorrect": false
+          },
+          {
+            "_id": "538febd576cb8a0068b1404d",
+            "body": "$CD$",
+            "is_correct": true,
+            "isCorrect": false
+          },
+          {
+            "_id": "538febd576cb8a0068b1404c",
+            "body": "$CA$",
+            "is_correct": false,
+            "isCorrect": false
+          }
+        ],
+        "correct_answer": []
+      },
+      {
+        "_id": "538fed5f76cb8a0068b14068",
+        "body": "下列是$\\Delta ACD$内角的是（ ）？\n<div><probimg src='http://mothership.qiniudn.com/53cf27216ae199341873aedf'></probimg></div>",
+        "expl": "三角形相邻两边的夹角是三角形的内角。<br/>$\\angle ACB$是$\\Delta ABC$的内角；<br/>$\\angle CAE$是$\\Delta ACE$的内角。<br>$\\angle ACE$是$AC$与$CD$的夹角，$\\angle ADB$是$AD$与$CD$的夹角，<br>因此它们是$\\Delta ACD$的内角",
+        "type": "multi",
+        "disabled": false,
+        "tags": [],
+        "topics": [],
+        "choices": [
+          {
+            "is_correct": true,
+            "body": "$\\angle ACE$",
+            "_id": "538fed5f76cb8a0068b1406c",
+            "isCorrect": false
+          },
+          {
+            "is_correct": true,
+            "body": "$\\angle ADB$",
+            "_id": "538fed5f76cb8a0068b1406b",
+            "isCorrect": false
+          },
+          {
+            "is_correct": false,
+            "body": "$\\angle ACB$",
+            "_id": "538fed5f76cb8a0068b1406a",
+            "isCorrect": false
+          },
+          {
+            "is_correct": false,
+            "body": "$\\angle CAE$",
+            "_id": "538fed5f76cb8a0068b14069",
+            "isCorrect": false
+          }
+        ],
+        "correct_answer": []
+      },
+      {
+        "_id": "538fed5f76cb8a0068b14067",
+        "body": "下列哪个点不是$\\Delta ACE$的顶点？\n<div><probimg src='http://mothership.qiniudn.com/53cf27226ae199341873aee0'></probimg></div>",
+        "expl": "三角形的顶点是这个三角形的三边相交形成的点。<br/>点$B$不在$\\Delta ACE$的任何一条边上，所以它自然不是$\\Delta ACE$的顶点啦。<br>点$D$只在$\\Delta ACE$的$CE$边上，不在其它两条边上，它自然也不是$\\Delta ACE$的顶点啦。",
+        "type": "multi",
+        "disabled": false,
+        "tags": [],
+        "topics": [],
+        "choices": [
+          {
+            "_id": "538ff83076cb8a0068b14075",
+            "body": "$A$",
+            "is_correct": false,
+            "isCorrect": false
+          },
+          {
+            "_id": "538ff83076cb8a0068b14074",
+            "body": "$B$",
+            "is_correct": true,
+            "isCorrect": false
+          },
+          {
+            "_id": "538ff83076cb8a0068b14073",
+            "body": "$C$",
+            "is_correct": false,
+            "isCorrect": false
+          },
+          {
+            "_id": "538ff83076cb8a0068b14072",
+            "body": "$D$",
+            "is_correct": true,
+            "isCorrect": false
+          }
+        ],
+        "correct_answer": []
+      },
+      {
+        "_id": "539159da81d531b15a4b7b5b",
+        "body": "图中有（  ）个三角形\n<div><probimg src='http://mothership.qiniudn.com/53cf27226ae199341873aee1'></probimg></div>",
+        "expl": "<div><explimg src='http://mothership.qiniudn.com/53cf27226ae199341873aee2'></explimg></div>",
+        "type": "single",
+        "disabled": false,
+        "tags": [],
+        "topics": [],
+        "choices": [
+          {
+            "is_correct": false,
+            "body": "$5$",
+            "_id": "539159da81d531b15a4b7b5f",
+            "isCorrect": false
+          },
+          {
+            "is_correct": false,
+            "body": "$6$",
+            "_id": "539159da81d531b15a4b7b5e",
+            "isCorrect": false
+          },
+          {
+            "is_correct": false,
+            "body": "$7$",
+            "_id": "539159da81d531b15a4b7b5d",
+            "isCorrect": false
+          },
+          {
+            "is_correct": true,
+            "body": "$8$",
+            "_id": "539159da81d531b15a4b7b5c",
+            "isCorrect": false
+          }
+        ],
+        "correct_answer": []
+      }
+    ]
+  },
+  {
+    "_id": "5390642eea8348a718c80a4b",
+    "name": "三角形的高",
+    "disabled": false,
+    "bloods": 3,
+    "videos": [
+      {
+        "_id": "5392b2e1c48cc97c366bc499",
+        "name": "三角形的高",
+        "problems": [
+          {
+            "_id": "5392b32cc48cc97c366bc4a0",
+            "choices": [
+              {
+                "is_correct": false,
+                "body": "A",
+                "_id": "5392b32cc48cc97c366bc4a3"
+              },
+              {
+                "is_correct": false,
+                "body": "B",
+                "_id": "5392b32cc48cc97c366bc4a2"
+              },
+              {
+                "is_correct": false,
+                "body": "C",
+                "_id": "5392b32cc48cc97c366bc4a1"
+              }
+            ],
+            "show_time": 139
+          },
+          {
+            "_id": "5392b32cc48cc97c366bc49f",
+            "choices": [
+              {
+                "is_correct": false,
+                "body": "A",
+                "_id": "5396cd78ec7e86764f00a1e6"
+              },
+              {
+                "is_correct": false,
+                "body": "B",
+                "_id": "5396cd78ec7e86764f00a1e5"
+              },
+              {
+                "is_correct": false,
+                "body": "C",
+                "_id": "5396cd78ec7e86764f00a1e4"
+              }
+            ],
+            "show_time": 64
+          },
+          {
+            "_id": "5396cd98ec7e86764f00a1e7",
+            "choices": [
+              {
+                "is_correct": false,
+                "body": "A",
+                "_id": "5396cdb3ec7e86764f00a1e9"
+              },
+              {
+                "is_correct": false,
+                "body": "B",
+                "_id": "5396cdb3ec7e86764f00a1e8"
+              }
+            ],
+            "show_time": 128
+          },
+          {
+            "_id": "5396cddaec7e86764f00a1ea",
+            "choices": [
+              {
+                "is_correct": false,
+                "body": "A",
+                "_id": "5396cdedec7e86764f00a1ec"
+              },
+              {
+                "is_correct": false,
+                "body": "B",
+                "_id": "5396cdedec7e86764f00a1eb"
+              }
+            ],
+            "show_time": 318
+          }
+        ],
+        "url": "http://yc-course-video.qiniudn.com/5392b2e1c48cc97c366bc499",
+        "tags": [],
+        "topics": []
+      }
+    ],
+    "problems": [
+      {
+        "_id": "5391673be66322855fba5b07",
+        "body": "从三角形的一个顶点向它的对边所在直线画垂线，（  ）和（  ）之间的线段叫做三角形的（  ）",
+        "type": "single",
+        "disabled": false,
+        "tags": [],
+        "topics": [],
+        "choices": [
+          {
+            "is_correct": true,
+            "body": "顶点；垂足；高",
+            "_id": "5391673be66322855fba5b09",
+            "isCorrect": false
+          },
+          {
+            "is_correct": false,
+            "body": "交点；边；宽",
+            "_id": "5391673be66322855fba5b08",
+            "isCorrect": false
+          }
+        ],
+        "correct_answer": []
+      },
+      {
+        "_id": "5391673be66322855fba5b02",
+        "body": "三角形有（  ）条高",
+        "expl": "从三角形的任意一个顶点向其对边或对边所在的直线做垂线都能得到这个三角形的一条高。<br/>三角形有三个顶点，所以有$3$条高。",
+        "type": "single",
+        "disabled": false,
+        "tags": [],
+        "topics": [],
+        "choices": [
+          {
+            "is_correct": false,
+            "body": "$1$",
+            "_id": "5391673be66322855fba5b06",
+            "isCorrect": false
+          },
+          {
+            "is_correct": false,
+            "body": "$2$",
+            "_id": "5391673be66322855fba5b05",
+            "isCorrect": false
+          },
+          {
+            "is_correct": true,
+            "body": "$3$",
+            "_id": "5391673be66322855fba5b04",
+            "isCorrect": false
+          },
+          {
+            "is_correct": false,
+            "body": "$4$",
+            "_id": "5391673be66322855fba5b03",
+            "isCorrect": false
+          }
+        ],
+        "correct_answer": []
+      },
+      {
+        "_id": "5391673be66322855fba5aff",
+        "body": "锐角三角形的高在三角形的（  ）",
+        "type": "single",
+        "disabled": false,
+        "tags": [],
+        "topics": [],
+        "choices": [
+          {
+            "is_correct": true,
+            "body": "内部",
+            "_id": "5391673be66322855fba5b01",
+            "isCorrect": false
+          },
+          {
+            "is_correct": false,
+            "body": "外部",
+            "_id": "5391673be66322855fba5b00",
+            "isCorrect": false
+          }
+        ],
+        "correct_answer": []
+      },
+      {
+        "_id": "5391673be66322855fba5afc",
+        "body": "直角三角形的高有（  ）条在三角形内部，（  ）条与直角边重合",
+        "expl": "根据高的定义，高是由三角形一顶点向它对边所在的直线做出的垂线段。<br/>而直角三角形的两条直角边相互垂直，因此它们为这个直角三角形的两条高",
+        "type": "single",
+        "disabled": false,
+        "tags": [],
+        "topics": [],
+        "choices": [
+          {
+            "is_correct": true,
+            "body": "$1；2$",
+            "_id": "5391673be66322855fba5afe",
+            "isCorrect": false
+          },
+          {
+            "is_correct": false,
+            "body": "$2；1$",
+            "_id": "5391673be66322855fba5afd",
+            "isCorrect": false
+          }
+        ],
+        "correct_answer": []
+      },
+      {
+        "_id": "5391718ee66322855fba5cad",
+        "body": "钝角三角形的高有（  ）在三角形外部，（  ）条在三角形内部",
+        "type": "single",
+        "disabled": false,
+        "tags": [],
+        "topics": [],
+        "choices": [
+          {
+            "is_correct": false,
+            "body": "$1；2$",
+            "_id": "5391718ee66322855fba5caf",
+            "isCorrect": false
+          },
+          {
+            "is_correct": true,
+            "body": "$2；1$",
+            "_id": "5391718ee66322855fba5cae",
+            "isCorrect": false
+          }
+        ],
+        "correct_answer": []
+      },
+      {
+        "_id": "5391718ee66322855fba5ca9",
+        "body": "锐角三角形的三条高交于三角形的（  ）；直角三角形的三条高交于三角形的（  ）；钝角三角形的三条高交于三角形的（  ）",
+        "type": "single",
+        "disabled": false,
+        "tags": [],
+        "topics": [],
+        "choices": [
+          {
+            "is_correct": true,
+            "body": "内部；直角顶点；外部",
+            "_id": "5391718ee66322855fba5cac",
+            "isCorrect": false
+          },
+          {
+            "is_correct": false,
+            "body": "外部；斜边；内部",
+            "_id": "5391718ee66322855fba5cab",
+            "isCorrect": false
+          },
+          {
+            "is_correct": false,
+            "body": "边上；内部；顶点",
+            "_id": "5391718ee66322855fba5caa",
+            "isCorrect": false
+          }
+        ],
+        "correct_answer": []
+      }
+    ]
+  }
+]
