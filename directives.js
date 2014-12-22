@@ -282,6 +282,7 @@ angular.module('Test')
     .directive('hypervideo', function(){
         return {
             restrict: 'E',
+            //templateUrl: '_videoTemplate.html',
             scope: {
                 activity: '=activity'
             },
@@ -305,6 +306,7 @@ angular.module('Test')
                 var initHyperVideo = function(newVideo){
                     $element.html('<video id="video" class="video-js vjs-default-skin"></video>');
                     video = $('video')[0];
+                    console.log(video);
                     $scope.video = newVideo;
                     video.src = $scope.video.url;
                     popcorn = Popcorn(video);
@@ -312,9 +314,9 @@ angular.module('Test')
                 };
                 var initVideoJSPlayer = function(){
                     videoJSPlayer = videojs(video, options);
-                    videoJSPlayer.on("loadedmetadata", initPlayerSize);
-                    videoJSPlayer.on('progress', processData);
-                    videoJSPlayer.on('ended', processVideoEnded);
+                    popcorn.on("loadedmetadata", initPlayerSize);
+                    popcorn.on('progress', processData);
+                    popcorn.on('ended', processVideoEnded);
                     initProblem();
                 };
                 var initProblem = function(){
@@ -329,9 +331,6 @@ angular.module('Test')
                         //console.log(e);
                     }
                 });
-                //$scope.$on('cancelListenForScope', function(){
-                //    $scope.$destroy();
-                //});
                 var initPlayerSize = function(){
                     var videoJsEl = videoJSPlayer.el();
                     if (videoJsEl.videoWidth > 0 && videoJsEl.videoHeight > 0) {
@@ -344,31 +343,17 @@ angular.module('Test')
 
                 };
                 var processVideoEnded = function(){
-                    var result = operateVideoNode();
+                    var result = $scope.video.from;
                     if(result){
                         $rootScope.$broadcast('destroyVideoResource');
-                        time = result['time'] + 1;
-                        initHyperVideo(result['from']);
+                        time = result['playTime'] + 1;
+                        $('#area').remove();
+                        initHyperVideo(result);
                     }
                 };
                 var createVideoNode = function(fromVideo, currentVideo, time){
-                    var videoNode = {};
-                    videoNode['from'] = fromVideo;
-                    videoNode['current'] = currentVideo;
-                    videoNode['time'] = time;
-                    videoHistory.push(videoNode);
-                };
-                var operateVideoNode = function(){
-                    var videoNode = null;
-                    if(videoHistory.length === 0) return false;
-                    for(var i = 0, j = videoHistory.length; i < j; i++){
-                        if(videoHistory[i]['current']['url'] === video.src){
-                            videoNode = videoHistory[i];
-                            break;
-                        }
-                    }
-                    videoHistory.splice(i, 1);
-                    return videoNode;
+                    currentVideo['from'] = fromVideo;
+                    fromVideo['playTime'] = time;
                 };
                 var makeChoice = function(choice){
                     return function(){

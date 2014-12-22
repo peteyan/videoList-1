@@ -36,7 +36,7 @@
         //choices
         if (typeof options == 'object') {
 
-            vjs.ChoicesControl = $('<div />');
+            vjs.ChoicesControl = $('<div id="area" />');
             vjs.ChoicesControl.addClass('vjs-choices-control');
             //refactor the loop and reset the choice id
             _.each(options, function(value, key) {
