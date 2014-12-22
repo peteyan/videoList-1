@@ -282,7 +282,6 @@ angular.module('Test')
     .directive('hypervideo', function(){
         return {
             restrict: 'E',
-            //templateUrl: '_videoTemplate.html',
             scope: {
                 activity: '=activity'
             },
@@ -306,7 +305,6 @@ angular.module('Test')
                 var initHyperVideo = function(newVideo){
                     $element.html('<video id="video" class="video-js vjs-default-skin"></video>');
                     video = $('video')[0];
-                    console.log(video);
                     $scope.video = newVideo;
                     video.src = $scope.video.url;
                     popcorn = Popcorn(video);
